@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ExpenseVision — Login</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+  <div class="container center">
+    <div class="card" style="max-width:420px;margin:40px auto">
+      <div class="brand center" style="flex-direction:column">
+        <img src="assets/logo.png" alt="logo" style="height:46px;opacity:.95" />
+        <h1 style="margin-top:8px">ExpenseVision</h1>
+      </div>
+
+      <form id="loginForm" style="margin-top:18px">
+        <label for="email">Email</label>
+        <input id="email" class="input" type="email" placeholder="you@example.com" required>
+        <label for="password">Password</label>
+        <input id="password" class="input" type="password" placeholder="••••••••" required>
+        <div class="form-actions">
+          <button class="btn" type="submit">Login</button>
+          <a class="btn ghost" href="register.html">Register</a>
+        </div>
+        <div id="loginMsg" class="small text-muted" style="margin-top:10px"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
